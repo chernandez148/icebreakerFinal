@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Accordion</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-sm-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="img/logo.png" width="150px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div>
+              <h1 class="font-logo m-0 py-3">Icebreaker Bartending</h1>
+              <hr class="m-0" />
+              <ul
+                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                style="--bs-scroll-height: 100px"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active fs-14" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle fs-14"
+                    href="#"
+                    id="navbarScrollingDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Service
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarScrollingDropdown"
+                  >
+                    <li><a class="dropdown-item fs-14" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item fs-14" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item fs-14" href="#"
+                        >Something else here</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-14" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-14" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-14" href="#">Our Company</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-14" href="#">Employment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-14" href="#">Get a quote | Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      id="carouselExampleIndicators"
+      class="d-none d-md-flex carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="row g-0" id="box-search">
+        <div class="thumbnail text-center">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/cover-banner-1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/cover-banner-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/cover-banner-1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="caption">
+            <h2 class="text-white display-2 m-0">ICEBREAKER BARTENDING</h2>
+            <h5 class="text-white fw-light">
+              WE OFFER BARTENDING PACKAGES FOR ANY OCCATION
+            </h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container-fluid p-0">
+      <div class="d-block d-md-none mobile-cover">
+        <img src="img/cover-photo.png" width="100%" alt="cover" />
+      </div>
+    </div>
+    <div class="container">
+      <section class="services py-3 text-center">
+        <h5 class="display-5 pb-4 fw-normal">OUR SERVICES</h5>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="img/barman.png" width="50%" alt="barman" />
+            <h5 class="fw-light my-3">BAR PACKAGES</h5>
+            <p class="fs-14 pb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. In
+              nulla posuere sollicitudin aliquam ultrices. Leo a diam
+              sollicitudin tempor id eu.
+            </p>
+            <a class="btn btn-dark-gray mb-3 mb-lg-0" href="#" role="button"
+              >Learn More</a
+            >
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="img/cocktail.png" width="50%" alt="cocktail" />
+            <h5 class="fw-light my-3">HAND CRAFTED COCKTAILS</h5>
+            <p class="fs-14 pb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. In
+              nulla posuere sollicitudin aliquam ultrices. Leo a diam
+              sollicitudin tempor id eu.
+            </p>
+            <a class="btn btn-dark-gray mb-3 mb-lg-0" href="#" role="button"
+              >Learn More</a
+            >
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="img/cheers.png" width="50%" alt="wedding" />
+            <h5 class="fw-light my-3">WEDDING BAR PACKAGES</h5>
+            <p class="fs-14 pb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. In
+              nulla posuere sollicitudin aliquam ultrices. Leo a diam
+              sollicitudin tempor id eu.
+            </p>
+            <a class="btn btn-dark-gray mb-3 mb-lg-0" href="#" role="button"
+              >Learn More</a
+            >
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <img src="img/buffet.png" width="50%" alt="catering" />
+            <h5 class="fw-light my-3">CATERING</h5>
+            <p class="fs-14 pb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. In
+              nulla posuere sollicitudin aliquam ultrices. Leo a diam
+              sollicitudin tempor id eu.
+            </p>
+            <a class="btn btn-dark-gray mb-3 mb-lg-0" href="#" role="button"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="d-none d-md-flex packages">
+        <div class="row justify-content-center pt-5">
+          <div class="col col-4 gx-2">
+            <img src="img/standard.png" width="100%" alt="standard-package" />
+          </div>
+          <div class="col col-4 gx-2">
+            <img src="img/premium.png" width="100%" alt="premium-package" />
+          </div>
+          <div class="col col-4 gx-2">
+            <img src="img/full-bar.png" width="100%" alt="full-bar" />
+          </div>
+        </div>
+      </section>
+      <section class="d-flex d-md-none carousel-mobile">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/standard.png"
+                class="d-block w-100"
+                alt="standard-package"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/premium.png"
+                class="d-block w-100"
+                alt="premium-package"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/full-bar.png"
+                class="d-block w-100"
+                alt="full-bar"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="partners py-3 py-md-5 text-center">
+        <h5 class="display-5 pb-4 fw-normal">CATERING PARTNERS</h5>
+        <ul class="p-0">
+          <li>
+            <a href="#"
+              ><img
+                class="md-50"
+                src="img/food.jpg"
+                width="100px"
+                alt="catering-partner"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="md-50"
+                src="img/dj.png"
+                width="100px"
+                alt="music-partner"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="md-50"
+                src="img/photo.png"
+                width="100px"
+                alt="photo-partner"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="md-50"
+                src="img/catering.png"
+                width="100px"
+                alt="food-partner"
+            /></a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container-fluid bg-dark-blue">
+      <div class="footer d-none d-md-block py-3">
+        <div class="row g-0">
+          <div class="col-3 g-0">
+            <h5 class="text-white ms-2">Contact Us</h5>
+            <ul class="list-unstyled pl-3">
+              <li>
+                <a href="https://bit.ly/3LLVyjT">San Bernardino, CA 92346</a>
+              </li>
+              <li>
+                <a href="mailto:webmaster@example.com"
+                  >icebreakerbartending@gmail.com</a
+                >
+              </li>
+              <li><a href="tel:555-555-5555">555-555-5555</a></li>
+            </ul>
+          </div>
+          <div class="col-3 g-0">
+            <h5 class="text-white ms-2">Information</h5>
+            <ul class="list-unstyled pl-3">
+              <li>
+                <a href="#">Plans & Pricing</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Jobs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 g-0">
+            <h5 class="text-white ms-2">Help</h5>
+            <ul class="list-unstyled pl-3">
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Reservations</a>
+              </li>
+              <li>
+                <a href="#">Modify</a>
+              </li>
+              <li>
+                <a href="#">Cancellations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 g-0">
+            <h5 class="text-white ms-2">Follow Us</h5>
+            <ul class="list-unstyled pl-3 d-flex">
+              <li>
+                <a href="#"><img src="img/fb.png" width="25px" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/ig.png" width="25px" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/snap.png" width="25px" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="img/yelp.png" width="25px" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div section="accordion-footer">
+        <div class="accordion d-md-none" id="myAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                type="button"
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+              >
+                CONTACT US
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#myAccordion"
+            >
+              <div class="card-body">
+                <p class="mb-1">Reach us at:</p>
+                <ul class="list-unstyled pl-3">
+                  <li>
+                    <a href="https://bit.ly/3LLVyjT"
+                      >San Bernardino, CA 92346</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:webmaster@example.com"
+                      >icebreakerbartending@gmail.com</a
+                    >
+                  </li>
+                  <li><a href="tel:555-555-5555">555-555-5555</a></li>
+                </ul>
+                <p class="mb-1">Follow us:</p>
+                <ul class="list-unstyled pl-3 d-flex">
+                  <li>
+                    <a href="#"><img src="img/fb.png" width="25px" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/ig.png" width="25px" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/snap.png" width="25px" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="img/yelp.png" width="25px" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                type="button"
+                class="accordion-button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+              >
+                INFORMATION
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#myAccordion"
+            >
+              <div class="card-body">
+                <p class="mb-1">Find Out:</p>
+                <ul class="list-unstyled pl-3">
+                  <li>
+                    <a href="#">Plan & Prices</a>
+                  </li>
+                  <li>
+                    <a href="#">About us</a>
+                  </li>
+                  <li><a href="#">Jobs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                type="button"
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+              >
+                HELP
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#myAccordion"
+            >
+              <div class="card-body">
+                <p class="mb-1">Questions?:</p>
+                <ul class="list-unstyled pl-3">
+                  <li>
+                    <a href="#">FAQ</a>
+                  </li>
+                  <li>
+                    <a href="#">Support</a>
+                  </li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Reservations</a></li>
+                  <li><a href="#">Modify</a></li>
+                  <li><a href="#">Cancelation</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

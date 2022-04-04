@@ -1,0 +1,68 @@
+.thumbnail {
+  position: relative;
+}
+
+.caption {
+  background: #00000066;
+  position: absolute;
+  top: 38%;
+  left: 0;
+  width: 100%;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.btn {
+  padding: 0.15rem 1rem !important;
+}
+
+.btn-dark-gray {
+  color: #fff !important;
+  background-color: #333333 !important;
+  border-color: #333333 !important;
+}
+
+.btn-dark-gray:hover {
+  background: #1d1d1d !important;
+  border-color: #1d1d1d !important;
+}
+
+.partners ul {
+  list-style-type: none;
+}
+
+.partners ul li {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0 1rem;
+}
+
+.bg-dark-blue {
+  background-color: #232e35 !important;
+}
+
+.accordion-item {
+  border: 0 !important;
+}
+
+.accordion-button {
+  background-color: #232e35 !important;
+  color: #4d6f85 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white !important;
+}
+
+ul a {
+  color: #f6f6f6;
+  font-weight: 300;
+  margin-left: 0.5rem;
+}
+
+.card-body {
+  background: #343e45;
+  color: white;
+}

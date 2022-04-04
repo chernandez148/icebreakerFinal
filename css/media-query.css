@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+  .md-50 {
+    width: 60px;
+  }
+
+  .partners a {
+    margin: 0;
+  }
+
+  .partners ul li {
+    padding: 0 0.3rem;
+  }
+}
